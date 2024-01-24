@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/balance"
+        android:icon="@drawable/ic_dollar"
+        android:title="Balans" />
+
+    <item
+        android:id="@+id/operator"
+        android:icon="@drawable/ic_operator"
+        android:title="Operator" />
+
+    <item
+        android:id="@+id/placeholder"
+        android:title="" />
+
+    <item
+        android:id="@+id/news"
+        android:icon="@drawable/ic_news"
+        android:title="Yangiliklar" />
+
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/ic_setting"
+        android:title="Sozlamalar" />
+</menu>

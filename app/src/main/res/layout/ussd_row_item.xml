@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    app:cardUseCompatPadding="true"
+    android:layout_marginHorizontal="1dp"
+    app:cardElevation="8dp">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ussdCard"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:cardCornerRadius="100dp"
+            android:backgroundTint="#01B4FF"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="2dp"
+            >
+            <TextView
+                android:id="@+id/tv_ussd_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*102#"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:id="@+id/linearUssd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toEndOf="@+id/ussdCard"
+            android:layout_marginStart="2dp"
+            >
+            <TextView
+                android:id="@+id/tv_ussd_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Balans"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:id="@+id/tv_ussd_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/balans"
+                android:textSize="8sp"/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/logoIv2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="2dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_arrow_down" />
+    </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btn_ussd_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tekshirish"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout"
+        />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

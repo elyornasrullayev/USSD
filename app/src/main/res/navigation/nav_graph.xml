@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.ensoft.ussd.fragments.home.HomeFragment"
+        android:label=""
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_ussdFragment"
+            app:destination="@id/ussdFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_smsFragment"
+            app:destination="@id/smsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_serviceFragment"
+            app:destination="@id/serviceFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_internetFragment"
+            app:destination="@id/internetFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_minuteFragment"
+            app:destination="@id/minuteFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_tariffFragment"
+            app:destination="@id/tariffFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.ensoft.ussd.fragments.info.InfoFragment"
+        android:label="Info"
+        tools:layout="@layout/fragment_info" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.ensoft.ussd.fragments.settings.SettingsFragment"
+        android:label="Sozlamalar"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/ussdFragment"
+        android:name="com.ensoft.ussd.fragments.ussd.UssdFragment"
+        android:label="USSD Kodlar"
+        tools:layout="@layout/fragment_ussd" >
+        <action
+            android:id="@+id/action_ussdFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/internetFragment"
+        android:name="com.ensoft.ussd.fragments.internet.InternetFragment"
+        android:label="Internet Paketlar"
+        tools:layout="@layout/fragment_internet" />
+    <fragment
+        android:id="@+id/minuteFragment"
+        android:name="com.ensoft.ussd.fragments.minute.MinuteFragment"
+        android:label="Daqiqa paketlar"
+        tools:layout="@layout/fragment_minute" />
+    <fragment
+        android:id="@+id/serviceFragment"
+        android:name="com.ensoft.ussd.fragments.service.ServiceFragment"
+        android:label="Xizmatlar"
+        tools:layout="@layout/fragment_service" />
+    <fragment
+        android:id="@+id/smsFragment"
+        android:name="com.ensoft.ussd.fragments.sms.SmsFragment"
+        android:label="SMS Paketlar"
+        tools:layout="@layout/fragment_sms" />
+    <fragment
+        android:id="@+id/tariffFragment"
+        android:name="com.ensoft.ussd.fragments.tariff.TariffFragment"
+        android:label="Tariflar"
+        tools:layout="@layout/fragment_tariff" />
+</navigation>

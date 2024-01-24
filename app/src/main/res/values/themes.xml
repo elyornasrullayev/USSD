@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.USSD" parent="Theme.MaterialComponents.DayNight">
+
+        <item name="colorPrimary">#01B4FF</item>
+        <item name="android:statusBarColor">#01B4FF</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        
+        <item name="drawerArrowStyle">@style/DrawerIconStyle</item>
+
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+
+    <style name="DrawerIconStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">#FFFFFF</item>
+    </style>
+
+
+    <style name="Theme.USSD" parent="Base.Theme.USSD" />
+</resources>
